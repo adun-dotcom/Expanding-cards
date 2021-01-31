@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@500;800&family=Montserrat:wght@400;700&family=Poppins:wght@300;400;500;800&family=Roboto:wght@400;700&family=Yusei+Magic&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  font-family: "Yusei Magic", sans-serif;
+  color: #fff;
+}
+
+.container {
+  width: 90%;
+  display: flex;
+}
+
+.card {
+  flex: 0.5;
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  border-radius: 60px;
+  margin: 10px;
+  transition: flex 0.7s ease-in;
+  position: relative;
+  cursor: pointer;
+}
+
+.card.active {
+  flex: 5;
+}
+
+.card h3 {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  font-size: 20px;
+  opacity: 0;
+}
+
+.card.active h3 {
+  opacity: 1;
+  transition: opacity 0.5s ease-in 0.3s;
+}
+
+.card-1 {
+  background-image: url("https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8Zm9vZHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60");
+}
+
+.card-2 {
+  background-image: url("https://images.unsplash.com/photo-1580377968103-84cadc052dc7?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDE3fHRvd0paRnNrcEdnfHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60");
+}
+
+.card-3 {
+  background: url("https://images.unsplash.com/photo-1528657249085-c569d3c869e4?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDExfEZ6bzN6dU9ITjZ3fHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60");
+}
+
+.card-4 {
+  background: url("https://images.unsplash.com/photo-1593580857599-f146a20d4a1c?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDg3fEpwZzZLaWRsLUhrfHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60");
+}
+
+.card-5 {
+  background: url("https://images.unsplash.com/photo-1597591411967-f2fd05547295?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDUwfGJEbzQ4Y1Vod25ZfHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60");
+}
+
+.card-6 {
+  background: url("https://images.unsplash.com/photo-1538652116325-8f5fa30fefff?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDQ4fEo5eXJQYUhYUlFZfHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60");
+}
